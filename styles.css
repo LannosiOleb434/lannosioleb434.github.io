@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* Blue to Aqua gradient */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 0 0 10px 10px; /* Rounded bottom edges */
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded edges for nav links */
+    transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px; /* Rounded edges for content section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px 10px 0 0; /* Rounded top edges */
+}
