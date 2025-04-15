@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Preparing Redirect...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0d0d0d;
+      color: #00ff88;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2em;
+      animation: pulse 2s infinite;
+    }
+
+    .loading-bar {
+      margin-top: 20px;
+      width: 80%;
+      max-width: 400px;
+      height: 10px;
+      background: #222;
+      border: 1px solid #00ff88;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .loading-fill {
+      height: 100%;
+      background: #00ff88;
+      width: 0%;
+      animation: fillBar 4s linear forwards;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    @keyframes fillBar {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+  </style>
+  <script>
+    // Redirect after 4 seconds
+    setTimeout(() => {
+      window.location.href = "https://discord.gg/YYFJKkHwZa"; // change this
+    }, 4000);
+  </script>
+</head>
+<body>
+  <h1>Redirecting you, please wait...</h1>
+  <div class="loading-bar">
+    <div class="loading-fill"></div>
+  </div>
+</body>
+</html>
